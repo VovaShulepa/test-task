@@ -1,4 +1,4 @@
-<style="text-align: center">
+<p align="center">
 
 This is Test task from GoIT academy
 
@@ -11,4 +11,4 @@ the color of the button changes. And yours is added to the number of followers.
 
 <img src="./src/images/cardscreen.png" />
 
-</style>
+</p>
