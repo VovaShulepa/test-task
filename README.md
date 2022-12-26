@@ -1,3 +1,5 @@
+<style="text-align: center">
+
 This is Test task from GoIT academy
 
 Goal: Create a card for a single tweet and add click-through interactivity
@@ -8,3 +10,5 @@ the color of the button changes. And yours is added to the number of followers.
 
 
 <img src="./src/images/cardscreen.png" />
+
+</style>
