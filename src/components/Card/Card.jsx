@@ -6,14 +6,15 @@ import picture from '../../images/pictures.png';
 
 class Card extends React.Component {
   state = {
-    value: this.props.initialValue,
+    followers: this.props.initialFollowers,
     isFollowing: false,
   };
 
   componentDidMount() {
-    const parsedUser = JSON.parse(localStorage.getItem('isFollowing'));
-    if (parsedUser) {
-      this.setState({ value: parsedUser });
+    const parsedStatus = JSON.parse(localStorage.getItem('isFollowing'));
+
+    if (parsedStatus) {
+      this.setState({ isFollowing: parsedStatus });
     }
   }
 
@@ -45,8 +46,8 @@ class Card extends React.Component {
           <li className={css.Tweets}>777 tweets</li>
           <li className={css.Followers}>
             {this.state.isFollowing
-              ? (this.state.value + 1).toLocaleString('en-US')
-              : this.state.value.toLocaleString('en-US')}{' '}
+              ? (this.state.followers + 1).toLocaleString('en-US')
+              : this.state.followers.toLocaleString('en-US')}{' '}
             followers
           </li>
         </ul>

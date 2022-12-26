@@ -12,7 +12,7 @@ export const App = () => {
         color: '#010101',
       }}
     >
-      <Card initialValue={100500} />
+      <Card initialFollowers={100500} />
     </div>
   );
 };
